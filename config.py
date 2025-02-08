@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-WC_API_URL = "https://<your-site>/wp-json/wc/v3/products"
+WC_API_URL = os.getenv("SITE")
 WC_CONSUMER_KEY = os.getenv("WC_CONSUMER_KEY")
 WC_CONSUMER_SECRET = os.getenv("WC_CONSUMER_SECRET")
 
